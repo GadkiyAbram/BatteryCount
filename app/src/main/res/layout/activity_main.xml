@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aleksandrabramovski.batterycount.MainActivity"
+    android:contextClickable="false"
+    android:clickable="false">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/gyrodatalogo" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNB"
+        android:minHeight="55dp"
+        android:layout_below="@+id/buttonBC"
+        android:background="#f0ecec"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonTZUsed"
+        android:layout_toLeftOf="@+id/buttonTZUsed" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Batteries"
+        android:onClick="onClick"
+        android:id="@+id/buttonBC"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonUB" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/sq3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset used to zero"
+        android:onClick="onClick"
+        android:id="@+id/buttonTZUsed"
+        android:layout_alignTop="@+id/buttonTZNew"
+        android:layout_alignRight="@+id/resetALL"
+        android:layout_alignEnd="@+id/resetALL" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/used_batteries"
+        android:onClick="onClick"
+        android:id="@+id/buttonUB"
+        android:layout_above="@+id/textViewUB"
+        android:layout_alignRight="@+id/textViewUB"
+        android:layout_alignEnd="@+id/textViewUB"
+        android:layout_toEndOf="@+id/textViewNB" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset NEW to Zero"
+        android:onClick="onClick"
+        android:id="@+id/buttonTZNew"
+        android:layout_below="@+id/minusNew"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonTZUsed"
+        android:layout_toStartOf="@+id/buttonTZUsed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewUB"
+        android:minHeight="55dp"
+        android:background="#f0ecec"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/buttonBC"
+        android:layout_toRightOf="@+id/textViewNB"
+        android:layout_alignRight="@+id/buttonTZUsed"
+        android:layout_alignEnd="@+id/buttonTZUsed" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset ALL to Zero"
+        android:id="@+id/resetALL"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- new batteries"
+        android:id="@+id/minusNew"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textViewUB"
+        android:layout_toStartOf="@+id/textViewUB" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- used batteries"
+        android:id="@+id/minusUsed"
+        android:layout_alignBottom="@+id/minusNew"
+        android:layout_toRightOf="@+id/minusNew"
+        android:layout_alignRight="@+id/textViewUB"
+        android:layout_alignEnd="@+id/textViewUB" />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Gyrodata Battery Count</string>
+    <string name="used_batteries">Used Batteries</string>
+</resources>
